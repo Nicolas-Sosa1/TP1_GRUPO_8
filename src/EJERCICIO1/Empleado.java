@@ -35,7 +35,22 @@ public class Empleado extends Persona {
 		this.puesto = "sin puesto";
 		
 	}
+	
+// Constructor 2
+	public Empleado(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero,
+					String direccion, String telefono, String email, String puesto) {
+		super(dni, nombre, apellido, fechaNacimiento, genero, direccion, telefono, email);
+		this.legajo = ++ultimoLegajo;
+		this.puesto = puesto;
+	}
 
+// Metodo ToString
+	@Override
+	public String toString() {
+		return super.toString() +
+				"Empleado [legajo=" + legajo + ", puesto=" + puesto + "]";
+	}
+		
 
 	
 }
