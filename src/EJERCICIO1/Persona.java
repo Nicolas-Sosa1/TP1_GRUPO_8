@@ -13,14 +13,14 @@ public class Persona {
 		private String telefono;
 		private String email;
 
-//Constructores
+//Constructor 1
 		
 		public Persona()
 		{
 			this.nombre = "sin nombre";
 			this.fechaNacimiento = LocalDate.of(2025, 1, 1);
 		}
-		
+//Constructor 2
 		public Persona(String dni, String nombre, String apellido, LocalDate fechaNacimiento, String genero, String direccion, String telefono, String email) 
 		{
 			this.dni = dni;
