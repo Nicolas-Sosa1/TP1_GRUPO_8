@@ -31,7 +31,7 @@ public class Persona {
 			this.direccion = direccion;
 			this.telefono = telefono;
 			this.email = email;
-		}		
+		}
 		
 // Getters y Setters	
 		public String getDni() {
