@@ -14,5 +14,28 @@ public class Empleado extends Persona {
 		return ultimoLegajo +1;
 	}
 	
+//getters and setters
+
+	public String getPuesto() {
+		return puesto;
+	}
+
+	public void setPuesto(String puesto) {
+		this.puesto = puesto;
+	}
+
+	public int getLegajo() {
+		return legajo;
+	}
+
+//constructor 1
+	public Empleado() {
+		super();
+		this.legajo = ++ultimoLegajo;
+		this.puesto = "sin puesto";
+		
+	}
+
+
 	
 }
