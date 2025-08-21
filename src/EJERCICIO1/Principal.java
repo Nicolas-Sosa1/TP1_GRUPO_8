@@ -21,5 +21,12 @@ public class Principal {
 		Empleado empleado5 = new Empleado("dni5", "nombre5", "apellido5", LocalDate.of(2000, 5,5), 
 				"genero5", "direccion5", "telefono5", "email5", "puesto5");
 				
+		System.out.println(empleado1);
+		System.out.println(empleado2);
+		System.out.println(empleado3);
+		System.out.println(empleado4);
+		System.out.println(empleado5);
+		
+		System.out.println("El próximo legajo será el " + Empleado.devuelveProximoLegajo());
 	}
 }
